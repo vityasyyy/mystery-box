@@ -1,3 +1,8 @@
+# Identitas
+## Nama, NIM, Kelas, Dosen Pengampu
+Muhammad Argya Vityasy, 23/522547/PA/22475, WRPL KOM A, Guntur Budi Herwanto, S.Kom., M.Cs.
+
+---
 
 # 🖼️ Background Remover App
 
