@@ -1,90 +1,123 @@
 # Identitas
 ## Nama, NIM, Kelas, Dosen Pengampu
-Muhammad Argya Vityasy, 23/522547/PA/22475, WRPL KOM A, Guntur Budi Herwanto, S.Kom., M.Cs.
+- Andrian Danar Perdana (23/513040/PA/21917)
+- Daffa Indra Wibowo (23/518514/PA/22253)
+- Muhammad Argya Vityasy (23/522547/PA/22475)
+- Rayhan Firdaus Ardian (23/519095/PA/22279)
+
+WRPL KOM A, Guntur Budi Herwanto, S.Kom., M.Cs.
 
 ---
 
-# 🖼️ Background Remover App
+# 🎁 Mystery Box E-Commerce App
 
-An AI-powered background remover that allows users to upload images, remove backgrounds, and view/download the results from their personal dashboard.
+A platform where users can purchase randomized mystery boxes containing various items (electronics, fashion, collectibles), complete with secure payments and order tracking.
 
 ---
 
 ## 🚀 Initiative
 
-**Goal:** Build a lightweight background removal tool that stores processed images in a user dashboard, allowing users to manage, download, and view their uploaded images securely.
+**Goal:** Create a gamified shopping experience where users purchase sealed boxes containing random items of specified categories/value ranges.
 
 ---
 
 ## 🧩 Features
 
 ### ✅ MVP Goals
-- [x] Upload images via drag-and-drop or file picker
-- [x] Remove image background using AI or image processing API
-- [x] Store processed images in a user-specific dashboard
-- [x] Allow users to download their processed images
-- [x] User authentication (sign up/login)
+- [ ] User authentication (sign up/login)
+- [ ] Mystery box product listings with categories/price tiers
+- [ ] Shopping cart system
+- [ ] Checkout process with payment gateway integration
+- [ ] Order history with revealed box contents
+- [ ] Admin panel for box management
 
 ### 🧠 Future Improvements
-- [ ] Batch image processing
-- [ ] Folder/album organization
-- [ ] History of image edits
-- [ ] Option to adjust transparency or background color
-- [ ] Share images directly from the dashboard
+- [ ] Referral system with rewards
+- [ ] Limited edition boxes
+- [ ] Wishlist feature
+- [ ] Mystery box customization (price range, preferred categories)
+- [ ] Live unboxing animations
 
 ---
 
-## 📸 User Stories
+## 📦 User Stories
 
-### 🧍 As a user:
-- I want to upload an image and remove the background automatically.
-- I want to view my processed images in a clean dashboard.
-- I want to download images with transparent backgrounds.
-- I want my data and images to be secure and private.
+### 🧍 As a User:
+- "I want to browse mystery boxes by category/price"
+- "I want to see what others received in their boxes"
+- "I want to securely pay and instantly see my box contents"
+- "I want to track my order history"
+
+### 👔 As an Admin:
+- "I need to manage box inventory/odds"
+- "I want to view sales analytics"
+- "I need to upload box content items"
 
 ---
 
 ## ✅ Acceptance Criteria (MVP)
-
-- [ ] Users can upload JPEG/PNG files up to 5MB
-- [ ] Backgrounds are removed using an external API or ML model
-- [ ] Results are returned within 10 seconds
-- [ ] Authenticated users can access their dashboard
-- [ ] Images are stored in a secure storage solution (e.g., S3 or GCS)
-- [ ] UI shows upload progress, success, and failure states
+- [ ] Users can purchase boxes in 3+ categories (e.g., Tech, Fashion, Sports)
+- [ ] Payment integration with Stripe/Midtrans
+- [ ] Randomized item distribution algorithm
+- [ ] Mobile-responsive design
+- [ ] Order confirmation email/SMS
+- [ ] Admin dashboard with CRUD operations
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend        | Backend         | Other                |
-|-----------------|-----------------|----------------------|
-| Next.js / React | Node.js / Go / Python | Cloud Storage (GCS/S3) |
-| Tailwind CSS    | REST API / gRPC | Background removal API (e.g., remove.bg or custom ML) |
-| Auth (NextAuth, Firebase, etc.) | PostgreSQL / MongoDB | Docker / GitHub Actions (CI/CD) |
+| Frontend        | Backend         | Payments           |
+|-----------------|-----------------|--------------------|
+| Next.js/React   | Node.js/Express | Stripe API         |
+| Tailwind CSS    | Python/Django   | Midtrans (ID)      |
+| Zustand/Redux   | PostgreSQL      | PayPal API         |
+| Framer Motion   | MongoDB         | Payment gateway SDK|
+
+**Additional:**
+- Cloudinary (for product images)
+- Redis (for caching)
+- Docker (containerization)
+- GitHub Actions (CI/CD)
 
 ---
 
-## 🗂️ Project Structure (Agile-Friendly)
-
-| Type            | Description |
-|-----------------|-------------|
-| `Initiative`    | Background Remover with Dashboard |
-| `Epics`         | Uploading, Background Removal, User Dashboard, Auth |
-| `User Stories`  | Per feature, tracked in GitHub Issues |
-| `Acceptance Criteria` | Defined per story |
+## 🔒 Security Considerations
+1. PCI Compliance for payments
+2. SSL encryption
+3. Rate limiting for API endpoints
+4. Role-based access control
+5. Audit logs for sensitive operations
 
 ---
 
-## 📦 Getting Started
+## 🗂️ Agile Project Structure
 
-```bash
-# Clone this repo
-git clone https://github.com/yourusername/background-remover-app.git
-cd background-remover-app
+**Epics:**
+1. User Authentication
+2. Product Management
+3. Cart & Checkout
+4. Payment Integration
+5. User Dashboard
+6. Admin Panel
 
-# Install dependencies (example)
-pnpm install
+**Sprints:**
+- 2-week sprints with GitHub Project Board
+- Daily standups (async via Discord/Slack)
+- Weekly demo sessions
 
-# Start development server
-pnpm dev
+---
+
+## 💰 Monetization Strategies (Optional)
+1. Percentage cut from each box sale
+2. Premium membership for better odds
+3. Sponsored boxes from brands
+4. In-app currency system
+
+---
+
+## 🚨 Risk Management
+1. **Legal Compliance:** Ensure gambling laws compliance in target regions
+2. **Inventory Management:** Algorithm for item distribution odds
+3. **Fraud Prevention:** Implement anti-bot measures
+4. **User Trust:** Clear terms about box odds/content value
